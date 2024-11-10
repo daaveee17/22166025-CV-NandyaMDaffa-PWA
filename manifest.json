@@ -1,0 +1,23 @@
+{
+    "name": "Portfolio Nandya Daffa",
+    "short_name": "Nandya Daffa",
+    "description": "Portofolio web saya yang menampilkan keterampilan dan proyek dalam desain UI/UX serta pengembangan web.",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#121212",
+    "theme_color": "#f05454",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "images/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "images/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

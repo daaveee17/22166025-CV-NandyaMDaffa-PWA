@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Nandya Daffa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <!-- Header dan Navigasi -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Home Section -->
+    <section id="home">
+        <div class="profile">
+            <img src="images/icon-192x192.png" alt="Your Profile Photo" class="profile-photo">
+            <h1>Halo! saya Nandya Daffa</h1>
+            <p>Seorang Content Creator dan Copywriter yang berfokus pada pembuatan konten yang
+                kreatif dan komunikatif.</p> <p>Saya memiliki keahlian dalam merancang pesan yang menarik,
+                    baik melalui tulisan maupun visual, untuk memikat audiens dan meningkatkan engagement</p>
+            <a href="files/your-cv.pdf" download id="download-cv">Download CV</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/hyvaaa17" target="_blank"><img src="images/instagram-logo2.png" alt="Instagram">Instagram</a>
+            <a href="https://www.tiktok.com/@insld17" target="_blank"><img src="images/tiktok-logo.png" alt="TikTok">TikTok</a>
+            <a href="https://www.youtube.com/@HyvaHyvaaa" target="_blank"><img src="images/youtube-logo.png" alt="YouTube">YouTube</a>
+        </div>
+        
+    </section>
+    
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Saya memiliki kemampuan untuk menyampaikan pesan yang tepat dan memikat, baik melalui tulisan maupun media visual.
+
+            Sebagai seorang Content Creator, saya berfokus pada pengembangan ide-ide unik yang dapat menarik perhatian audiens, serta menciptakan pengalaman yang berkesan. Sementara itu, dalam peran saya sebagai Copywriter, saya sangat memperhatikan detail dalam memilih kata-kata yang dapat mengubah cara orang berpikir dan bertindak, menciptakan iklan atau konten yang efektif dan memiliki dampak positif.
+            
+            Saya percaya bahwa setiap proyek adalah peluang untuk belajar dan berinovasi. Dengan pendekatan yang selalu menyesuaikan diri dengan tren terbaru, saya siap membantu merek atau individu untuk berbicara lebih dekat dengan audiens mereka dan mencapai tujuan komunikasi yang lebih baik.</p>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="images/bdg.logo.png" alt="Project 1">
+                <p>Video content cinematic adalah jenis produksi video yang mengutamakan elemen visual
+                     yang dramatis dan artistik, serupa dengan kualitas yang ditemukan dalam film-film besar.
+                      Dengan menggunakan teknik pengambilan gambar yang cermat, pencahayaan yang artistik, 
+                      komposisi visual yang kuat, dan pengeditan yang halus, video cinematic bertujuan untuk 
+                      menciptakan pengalaman menonton yang lebih mendalam dan emosional bagi audiens.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/project2-logo.png" alt="Project 2">
+                <p>Akun TikTok saya tempat bagi video-video pendek yang kreatif dan menghibur. 
+                    Di TikTok, Anda berbagi berbagai jenis konten yang cepat, menarik, dan mudah dinikmati 
+                    oleh audiens yang suka melihat sesuatu yang baru dalam hitungan detik. Dengan memanfaatkan 
+                    format video pendek, Anda memberikan ide, hiburan, 
+                    dan inspirasi dengan cara yang dinamis dan menarik. </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services">
+        <h2>My Services</h2>
+        <p>Penulisan Konten Kreatif</p> <p>Copywriting Video</p> <p>Konten Media Sosial</p> <p>Video editing</p>
+    </section>
+    
+    <!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Untuk informasi lebih lanjut, hubungi saya melalui email atau telepon.</p>
+    <address>
+        <p>
+            <a href="mailto:nandyadaffa@gmail.com">
+                <img src="images/gmail-logo.png" alt="Email" style="width: 20px; margin-right: 8px;"> 
+                nandyadaffa@gmail.com
+            </a>
+        </p>
+        <p>
+            <a href="https://wa.me/0895385209872" target="_blank">
+                <img src="images/whatsapp2-logo.png" alt="WhatsApp" style="width: 20px; margin-right: 8px;"> 
+                0895385209872
+            </a>
+        </p>
+    </address>
+</section>
+
+    <!-- Script untuk service worker -->
+    <script src="app.js"></script>
+
+    <!-- Script untuk notifikasi unduh -->
+    <script>
+        document.getElementById("download-cv").addEventListener("click", function() {
+            alert("CV berhasil diunduh!");
+        });
+    </script>
+</body>
+</html>

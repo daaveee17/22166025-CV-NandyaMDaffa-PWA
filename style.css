@@ -1,0 +1,186 @@
+/* Global styles */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #f05454;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f05454;
+}
+
+/* Header & Navigation */
+header {
+    position: fixed; /* Membuat navbar tetap di atas saat di-scroll */
+    top: 0; /* Menentukan posisi navbar di bagian atas */
+    left: 0;
+    width: 100%; /* Memastikan navbar tetap memenuhi lebar halaman */
+    z-index: 1000; /* Agar navbar berada di atas konten lainnya */
+    background-color: #636363; /* Warna latar belakang navbar */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-image: url('images/background-home.png'); /* Menambahkan background image */
+    background-size: cover; /* Membuat gambar menutupi seluruh area */
+    background-position: center; /* Menjaga gambar tetap terpusat */
+    background-attachment: fixed; /* Membuat latar belakang tetap saat scroll */
+}
+
+/* Profile Section */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-top: 3rem; /* Menambahkan jarak di atas foto profil */
+    border: 3px solid #f05454;
+}
+
+
+.profile h1 {
+    color: #f05454;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    margin: 0 0.5rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-media a img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 4rem 2rem;
+    margin: 0 20px;
+    background-image: url('images/background-home.png'); /* Menambahkan background image */
+    background-size: cover; /* Membuat gambar menutupi seluruh area */
+    background-position: center; /* Menjaga gambar tetap terpusat */
+    background-attachment: fixed; /* Membuat latar belakang tetap saat scroll */
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Portfolio Section */
+#portfolio {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: url('images/background-home.png'); /* Menambahkan background image */
+    background-size: cover; /* Membuat gambar menutupi seluruh area */
+    background-position: center; /* Menjaga gambar tetap terpusat */
+    background-attachment: fixed; /* Membuat latar belakang tetap saat scroll */
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.portfolio-item p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Services Section */
+#services {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: url('images/background-home.png'); /* Menambahkan background image */
+    background-size: cover; /* Membuat gambar menutupi seluruh area */
+    background-position: center; /* Menjaga gambar tetap terpusat */
+    background-attachment: fixed; /* Membuat latar belakang tetap saat scroll */
+}
+
+#services p {
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: url('images/background-home.png'); /* Menambahkan background image */
+    background-size: cover; /* Membuat gambar menutupi seluruh area */
+    background-position: center; /* Menjaga gambar tetap terpusat */
+    background-attachment: fixed; /* Membuat latar belakang tetap saat scroll */
+}
+
+#contact address {
+    font-style: normal;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .social-media a {
+        display: block;
+        margin-bottom: 1rem;
+    }
+    
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    #about p, #services p, #contact p {
+        font-size: 1rem;
+    }
+}
